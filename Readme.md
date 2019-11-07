@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Белькова](https://up.htmlacademy.ru/adaptive/18/user/1127431).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545).
 
 ---
 
