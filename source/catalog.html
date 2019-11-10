@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="150" height="150">
+      </a>
+      <nav class="header-nav">
+        <button class="header-nav__toggle" type="button">Открыть меню</button>
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="catalog-page">
+      <h1 class="catalog-page__title">Каталог товаров</h1>
+      <section class="catalog-page__wrapper product-cards">
+        <h3 class="visually-hidden">Блок с карточками товаров </h3>
+        <ul class="product-cards__list">
+          <li class="product-cards__item">
+            <span>
+              <a href="#">
+                <img src="https://via.placeholder.com/150x150" alt="Игрушка Зайчик-попрыгайчик" width="150" height="150">
+                <b>Зайчик-попрыгайчик</b>
+              </a>
+              <small>Рост 30 см, вес 200 г</small>
+              <b>1 200 руб.</b>
+              <a class="button product-cards__button">Положить в корзину</a>
+            </span>
+          </li>
+          <li class="product-cards__item">
+            <span>
+              <a href="#">
+                <img src="https://via.placeholder.com/150x150" alt="Корзинка для белья" width="150" height="150">
+                <b>Корзинка для белья</b>
+              </a>
+              <small>Диаметр 15 см, высота 10 см</small>
+              <b>690 руб.</b>
+              <a class="button product-cards__button">Положить в корзину</a>
+            </span>
+          </li>
+          <li class="product-cards__item">
+            <span>
+              <a href="#">
+                <img src="https://via.placeholder.com/150x150" alt="Большая корзинка для игрушек" width="150" height="150">
+                <b>Большая корзинка для игрушек</b>
+              </a>
+              <small>Диаметр 30 см, высота 30 см</small>
+              <b>1 500 руб.</b>
+              <a class="button product-cards__button">Положить в корзину</a>
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section class="video-production">
+        <h3 class="video-production__title">Процесс производства</h3>
+        <video class="video-production__video" width="150" height="150" controls="controls">
+          <source src="https://via.placeholder.com/150x150" type="video/mp4">
+        </video>
+        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="button video-production__button" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li>
+              <a href="https://www.instagram.com" aria-label="Мы в Instagram">
+                <img src="https://via.placeholder.com/150x150" alt="Мы в Instagram" width="150" height="150">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" aria-label="Мы в Facebook">
+                <img src="https://via.placeholder.com/150x150" alt="Мы в Facebook" width="150" height="150">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" aria-label="Мы в Twitter">
+                <img src="https://via.placeholder.com/150x150" alt="Мы в Twitter" width="150" height="150">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <img src="https://via.placeholder.com/150x150" alt="HTML Academy" width="150" height="150">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
