@@ -5,165 +5,163 @@
     <title>HTML Academy: Мишка - Каталог</title>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="150" height="150">
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="https://via.placeholder.com/150x150" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="150" height="150">
       </a>
       <nav class="header-nav">
         <button class="header-nav__toggle" type="button">Открыть меню</button>
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="header-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="header-nav__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="header-nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="header-nav__item">
-            <a href="#">Поиск по сайту</a>
+            <a class="header-nav__link header-nav__link--search" href="#">Поиск по сайту</a>
           </li>
           <li class="header-nav__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="header-nav__link header-nav__link--basket" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="form-page">
-      <h1 class="form-page__title">Вязание на заказ</h1>
-      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <section class="filter">
+    <main class="order-form">
+      <h1 class="order-form__title">Вязание на заказ</h1>
+      <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <section class="filter-form">
         <h2 class="visually-hidden">Форма для заказа</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter__section filter-type">
-            <legend>Тип</legend>
-            <ul class="filter">
-              <li>
-                <label>
-                  <input type="radio" name="accessory" checked>
+        <form class="filter-form__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__title">Тип</legend>
+            <ul class="filter-form__list">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="radio" name="accessory" checked>
                   Аксессуар для интерьера
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="radio" name="toy">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="radio" name="toy">
                   Детская игрушка
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__section filter-color">
-            <legend>Цвет</legend>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="white">
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__title">Цвет</legend>
+            <ul class="filter-form__list">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="checkbox" name="white">
                   Белый
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="grey">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="checkbox" name="grey">
                   Серый
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="tiffany">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="checkbox" name="tiffany">
                   «Тиффани»
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="black">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="checkbox" name="black">
                   Черный
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="pink">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="checkbox" name="pink">
                   Розовый
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="orange">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
+                  <input class="filter-form__input" type="checkbox" name="orange">
                   Оранжевый
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__section filter__full-name">
-            <legend>ФИО</legend>
-            <ul>
-              <li>
-                <label>
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__title">ФИО</legend>
+            <ul class="filter-form__list">
+              <li class="filter-form__item">
+                <label class="filter-form__label">
                   Имя:
-                  <input type="text" name="name" placeholder="Введите ваше имя*">
+                  <input class="filter-form__input filter-form__input--full-name" type="text" name="name" placeholder="Введите ваше имя*">
                 </label>
               </li>
-              <li>
-                <label>
+              <li class="filter-form__item">
+                <label class="filter-form__label">
                   Фамилия:
-                  <input type="text" name="surname" placeholder="Укажите фамилию*">
+                  <input class="filter-form__input filter-form__input--full-name" type="text" name="surname" placeholder="Укажите фамилию*">
                 </label>
               </li>
-              <li>
-                <label>
+              <li class="filter-form__item">
+                <label class="filter-form__label">
                   Отчество:
-                  <input type="text" name="patronymic" placeholder="Отчество, если желаете">
+                  <input class="filter-form__input filter-form__input--full-name" type="text" name="patronymic" placeholder="Отчество, если желаете">
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter__section filter-phone">
-            <legend>Тeл</legend>
-            <label>
-              <input type="tel" name="phone" placeholder="+7 XXX XXX XX XX*">
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__title">Тeл</legend>
+            <label class="filter-form__label">
+              <input class="filter-form__input filter-form__input--phone" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*">
             </label>
           </fieldset>
-          <fieldset class="filter__section filter-email">
-            <legend>E-mail</legend>
-            <label>
-              <input type="email" name="email" placeholder="Ваш Email*">
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__title">E-mail</legend>
+            <label class="filter-form__label">
+              <input class="filter-form__input filter-form__input--email" type="email" name="email" placeholder="Ваш Email*">
             </label>
           </fieldset>
-          <fieldset class="filter__section filter-extra">
-            <legend>Доп</legend>
-            <textarea name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__title">Доп</legend>
+            <textarea class="filter-form__comment" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
-          <small class="stats__legend stats__legend--bottom">
+          <small class="filter-form__footnote">
             <sup>*</sup>Поля обязательные для заполнения
           </small>
-          <button class="button filter__button" type="submit">Отправить заказ</button>
+          <button class="button filter-form__button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li>
-              <a href="https://www.instagram.com" aria-label="Мы в Instagram">
-                <img src="https://via.placeholder.com/150x150" alt="Мы в Instagram" width="150" height="150">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com" aria-label="Мы в Facebook">
-                <img src="https://via.placeholder.com/150x150" alt="Мы в Facebook" width="150" height="150">
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/" aria-label="Мы в Twitter">
-                <img src="https://via.placeholder.com/150x150" alt="Мы в Twitter" width="150" height="150">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-            <img src="https://via.placeholder.com/150x150" alt="HTML Academy" width="150" height="150">
-          </a>
-        </div>
+    <footer class="footer">
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com" aria-label="Мы в Instagram">
+              <img class="footer__social-image" src="https://via.placeholder.com/150x150" alt="Мы в Instagram" width="150" height="150">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com" aria-label="Мы в Facebook">
+              <img class="footer__social-image" src="https://via.placeholder.com/150x150" alt="Мы в Facebook" width="150" height="150">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://twitter.com/" aria-label="Мы в Twitter">
+              <img class="footer__social-image" src="https://via.placeholder.com/150x150" alt="Мы в Twitter" width="150" height="150">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <b class="footer__copyright-text">Разработано:</b>
+        <a class="button footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <img class="footer__copyright-image" src="https://via.placeholder.com/150x150" alt="HTML Academy" width="150" height="150">
+        </a>
       </div>
     </footer>
   </body>
