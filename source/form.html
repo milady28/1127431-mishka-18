@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
+      <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="https://via.placeholder.com/150x150" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="150" height="150">
       </a>
       <nav class="header-nav">
@@ -27,113 +28,111 @@
         </ul>
       </nav>
     </header>
-    <main class="order-form">
-      <h1 class="order-form__title">Вязание на заказ</h1>
-      <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <section class="filter-form">
+    <main class="page-form">
+      <h1 class="page-form__title">Вязание на заказ</h1>
+      <p class="page-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <section class="order-form">
         <h2 class="visually-hidden">Форма для заказа</h2>
-        <form class="filter-form__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__title">Тип</legend>
-            <ul class="filter-form__list">
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="radio" name="accessory" checked>
+        <form class="order-form__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="order-form__block">
+            <legend class="order-form__title">Тип</legend>
+            <ul class="order-form__list">
+              <li class="order-form__item">
+                <input class="order-form__input" type="radio" name="type" value="accessory" id="accessory" checked>
+                <label class="order-form__label" id="accessory">
                   Аксессуар для интерьера
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="radio" name="toy">
+              <li class="order-form__item">
+                <input class="order-form__input" type="radio" name="type" value="toy" id="toy">
+                <label class="order-form__label" id="toy">
                   Детская игрушка
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__title">Цвет</legend>
-            <ul class="filter-form__list">
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="checkbox" name="white">
+          <fieldset class="order-form__block">
+            <legend class="order-form__title">Цвет</legend>
+            <ul class="order-form__list">
+              <li class="order-form__item">
+                <input class="order-form__input" type="checkbox" name="white-color" id="white-color">
+                <label class="order-form__label" id="white-color">
                   Белый
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="checkbox" name="grey">
+              <li class="order-form__item">
+                <input class="order-form__input" type="checkbox" name="grey-color" id="grey-color">
+                <label class="order-form__label" id="grey-color">
                   Серый
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="checkbox" name="tiffany">
+              <li class="order-form__item">
+                <input class="order-form__input" type="checkbox" name="tiffany-color" id="tiffany-color">
+                <label class="order-form__label" id="tiffany-color">
                   «Тиффани»
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="checkbox" name="black">
+              <li class="order-form__item">
+                <input class="order-form__input" type="checkbox" name="black-color" id="black-color">
+                <label class="order-form__label" id="black-color">
                   Черный
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="checkbox" name="pink">
+              <li class="order-form__item">
+                <input class="order-form__input" type="checkbox" name="pink-color" id="pink-color">
+                <label class="order-form__label" id="pink-color">
                   Розовый
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
-                  <input class="filter-form__input" type="checkbox" name="orange">
+              <li class="order-form__item">
+                <input class="order-form__input" type="checkbox" name="orange-color" id="orange-color">
+                <label class="order-form__label" id="orange-color">
                   Оранжевый
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__title">ФИО</legend>
-            <ul class="filter-form__list">
-              <li class="filter-form__item">
-                <label class="filter-form__label">
+          <fieldset class="order-form__block">
+            <legend class="order-form__title">ФИО</legend>
+            <ul class="order-form__list">
+              <li class="order-form__item">
+                <input class="order-form__input order-form__input--full-name" type="text" name="name-user" placeholder="Введите ваше имя*" id="name-user" required>
+                <label class="order-form__label" id="name-user">
                   Имя:
-                  <input class="filter-form__input filter-form__input--full-name" type="text" name="name" placeholder="Введите ваше имя*">
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
+              <li class="order-form__item">
+                <input class="order-form__input order-form__input--full-name" type="text" name="surname-user" placeholder="Укажите фамилию*" id="surname-user" required>
+                <label class="order-form__label" id="surname-user">
                   Фамилия:
-                  <input class="filter-form__input filter-form__input--full-name" type="text" name="surname" placeholder="Укажите фамилию*">
                 </label>
               </li>
-              <li class="filter-form__item">
-                <label class="filter-form__label">
+              <li class="order-form__item">
+                <input class="order-form__input order-form__input--full-name" type="text" name="patronymic-user" placeholder="Отчество, если желаете" id="patronymic-user">
+                <label class="order-form__label" id="patronymic">
                   Отчество:
-                  <input class="filter-form__input filter-form__input--full-name" type="text" name="patronymic" placeholder="Отчество, если желаете">
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__title">Тeл</legend>
-            <label class="filter-form__label">
-              <input class="filter-form__input filter-form__input--phone" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*">
-            </label>
+          <fieldset class="order-form__block">
+            <legend class="order-form__title">Тeл</legend>
+            <input class="order-form__input order-form__input--phone" type="tel" name="phone-user" placeholder="+7 XXX XXX XX XX*" id="phone-user" required>
+            <label class="order-form__label" id="phone-user"></label>
           </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__title">E-mail</legend>
-            <label class="filter-form__label">
-              <input class="filter-form__input filter-form__input--email" type="email" name="email" placeholder="Ваш Email*">
-            </label>
+          <fieldset class="order-form__block">
+            <legend class="order-form__title">E-mail</legend>
+            <input class="order-form__input order-form__input--email" type="email" name="email-user" placeholder="Ваш Email*" id="email-user" required>
+            <label class="order-form__label" id="email-user"></label>
           </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__title">Доп</legend>
-            <textarea class="filter-form__comment" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="order-form__block">
+            <legend class="order-form__title">Доп</legend>
+            <textarea class="order-form__comment" name="extra-comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
-          <small class="filter-form__footnote">
+          <small class="order-form__footnote">
             <sup>*</sup>Поля обязательные для заполнения
           </small>
-          <button class="button filter-form__button" type="submit">Отправить заказ</button>
+          <button class="button order-form__button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
