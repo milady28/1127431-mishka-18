@@ -1,18 +1,31 @@
 .main-menu__list {
+  margin: 0;
   padding-left: 0;
 }
 
 .main-menu__item {
+  display: flex;
+  flex-direction: column;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   list-style: none;
 }
 
-.main-menu__item--interior {
+.main-menu__link {
+  padding-top: 30px;
+  padding-right: 185px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+
+  color: #ffffff;
+}
+
+.main-menu__link--interior {
   background-color: #63d1bb;
 }
 
-.main-menu__item--toys {
+.main-menu__link--toys {
   background-color: #56c3b2;
 }
