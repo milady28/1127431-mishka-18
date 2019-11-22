@@ -1,4 +1,6 @@
 .top-product {
+  display: flex;
+  flex-direction: column;
   margin-top: 34px;
 
   font-size: 15px;
@@ -22,6 +24,8 @@
 }
 
 .top-product__feature {
+  text-align: left;
+
   border-collapse: collapse;
 }
 
@@ -33,7 +37,18 @@
   font-weight: 400;
 }
 
+.top-product__value {
+  padding-left: 31px;
+}
+
 .top-product__price {
+  padding: 29px 0;
+
   font-size: 17px;
+  text-align: center;
   color: #444444;
+}
+
+.top-product__image {
+  margin-top: 42px;
 }
