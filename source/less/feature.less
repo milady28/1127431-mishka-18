@@ -1,0 +1,135 @@
+.feature {
+  margin-top: 76px;
+}
+
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.feature__list {
+  margin: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.feature__item--ecology::before {
+  content: "";
+
+  width: 32px;
+  height: 37px;
+
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+}
+
+.feature__item--price::before {
+  content: "";
+
+  width: 47px;
+  height: 27px;
+
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+}
+
+.feature__item--likes::before {
+  content: "";
+
+  width: 34px;
+  height: 27px;
+
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.feature__item--with-love::before {
+  content: "";
+
+  width: 35px;
+  height: 34px;
+
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+}
+
+.feature__item--support::before {
+  content: "";
+
+  width: 55px;
+  height: 23px;
+
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+}
+
+.feature__item--gift-wrap::before {
+  content: "";
+
+  width: 33px;
+  height: 32px;
+
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .feature {
+    margin-top: 128px;
+    margin-bottom: 82px;
+  }
+
+  .feature__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+
+  .feature__item {
+  margin-top: 112px;
+
+  font-size: 20px;
+  line-height: 22px;
+}
+
+  .feature__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature {
+    margin-top: 166px;
+    margin-bottom: 89px;
+    margin-left: 225px;
+  }
+
+  .feature__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+
+  .feature__item {
+}
+
+  .feature__wrapper {
+    display: flex;
+    align-items: center;
+  }
+}

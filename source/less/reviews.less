@@ -1,7 +1,10 @@
 .reviews {
+  margin-top: 61px;
+}
+
+.reviews__wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 61px;
 }
 
 .reviews__title {
@@ -47,6 +50,7 @@
 }
 
 .reviews__button {
+  order: 1;
   margin-top: 38px;
 
   text-align: center;
@@ -62,25 +66,18 @@
   }
 
   .reviews__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 50px;
   }
 
   .reviews__title {
+    order: -2;
+
     font-size: 43px;
     line-height: 50px;
-  }
-
-  .reviews__first-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .reviews__second-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 68px;
   }
 
   .reviews__user-wrapper {
@@ -89,6 +86,7 @@
   }
 
   .reviews__button {
+    order: -1;
     margin: 0;
     padding: 20px 41px;
   }
