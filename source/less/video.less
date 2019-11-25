@@ -8,8 +8,21 @@
 }
 
 .video__title {
+  display: flex;
+  justify-content: center;
+
   font-size: 17px;
   line-height: 24px;
+}
+
+.video__title::before {
+  content: "";
+
+  width: 32px;
+  height: 32px;
+
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
 }
 
 .video__description {
@@ -70,6 +83,11 @@
   .video {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .video__title {
+    display: flex;
+    flex-direction: column;
   }
 
   .video__wrapper {

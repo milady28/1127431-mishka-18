@@ -12,6 +12,8 @@
 }
 
 .product__title {
+  width: 200px;
+
   font-size: 17px;
   line-height: 24px;
 }
@@ -47,6 +49,10 @@
 @media (min-width: @tablet-width) {
   .product {
     flex-direction: row;
+  }
+
+  .product__card-wrapper {
+    justify-content: space-between;
   }
 
   .product__title {
