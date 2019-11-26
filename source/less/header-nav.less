@@ -1,21 +1,6 @@
-.header__logo--link {
-  order: 0;
-}
-
-.header-nav {
+.header-nav__list {
   display: flex;
   flex-direction: column;
-}
-
-.header-nav__wrapper--main {
-  order: 1;
-}
-
-.header-nav__wrapper--tools {
-  order: 2;
-}
-
-.header-nav__list {
   margin: 0;
   padding-left: 0;
 }
@@ -40,38 +25,48 @@
   opacity: 0.2;
 }
 
-.header-nav__wrapper--desktop {
+.header__toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.header-nav__wrapper--extra {
+  display: none;
+}
+
+.header-nav__new {
+  display: none;
+}
+
+.header-nav__sale {
+  display: none;
+}
+
+.header-nav__delivery {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
   .header {
     display: flex;
-    justify-content: space-between;
   }
 
-  .header-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-top: 36px;
-  }
-
-  .header-nav__wrapper--main {
-    order: 2;
-  }
-
-  .header-nav__wrapper--tools {
-    order: 1;
-    margin-left: 243px;
+  .header-nav__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   .header-nav__list {
-    display: flex;
+    flex-direction: row;
+  }
+
+  .header-nav__list--main {
+    order: 2;
   }
 
   .header-nav__list--tools {
-    margin-left: 0;
+    order: 1;
   }
 
   .header-nav__item {
@@ -88,9 +83,12 @@
     font-size: 0;
   }
 
-  .header-nav__wrapper--desktop {
-    order: 3;
-    display: flex;
+  .header__toggle {
+    display: none;
+  }
+
+ .header-nav__wrapper--extra {
+    display: block;
   }
 
   .header-nav__new {
@@ -102,6 +100,9 @@
   }
 
   .header-nav__delivery {
+    position: absolute;
+    left: 10px;
+
     display: block;
 
     font-size: 15px;
@@ -110,10 +111,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header {
+    flex-direction: column;
+  }
+
   .header-nav {
-    display: flex;
     margin: 0;
     margin-top: 36px;
+  }
+
+  .header-nav__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .header-nav__list {
@@ -142,9 +151,26 @@
     font-size: 0;
   }
 
-  .header-nav__wrapper--desktop {
-    order: 3;
-    display: flex;
-    justify-content: space-between;
+  .header-nav__new {
+    display: block;
+  }
+
+  .header-nav__sale {
+    display: block;
+  }
+
+  .header-nav__delivery {
+    position: static;
+    left: 10px;
+
+    display: block;
+
+
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .header-nav__item--delivery {
+    margin-left: auto;
   }
 }

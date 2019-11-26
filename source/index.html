@@ -10,17 +10,23 @@
   </head>
   <body>
     <header class="header container">
-      <div class="header__wrapper">
-        <a class="header__logo--link">
-          <img class="header__logo-image--mobile" src="img/logo-mobile.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="86" height="35">
-          <img class="header__logo-image--tablet" src="img/logo-tablet.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="113" height="46">
-          <img class="header__logo-image--desktop" src="img/logo-desktop.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="149" height="72">
-        </a>
-      </div>
+      <a class="header__logo-link">
+        <img class="header__logo-image header__logo-image--mobile" src="img/logo-mobile.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="86" height="35">
+        <img class="header__logo-image header__logo-image--tablet" src="img/logo-tablet.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="113" height="46">
+        <img class="header__logo-image header__logo-image--desktop" src="img/logo-desktop.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="149" height="72">
+      </a>
       <nav class="header-nav">
-        <button class="header__toggle" type="button">Открыть меню</button>
-        <div class="header-nav__wrapper header-nav__wrapper--tools">
-          <ul class="header-nav__list">
+        <div class="header-nav__wrapper">
+          <button class="header__toggle" type="button" aria-label="Открыть меню">X</button>
+          <ul class="header-nav__list header-nav__list--main">
+            <li class="header-nav__item header-nav__item--tablet">
+              <a class="header-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header-nav__item header-nav__item--tablet">
+              <a class="header-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="header-nav__list header-nav__list--tools">
             <li class="header-nav__item header-nav__item--search">
               <a class="header-nav__link header-nav__link--search" href="#" aria-label="Поиск по сайту">
                 <svg class="header-nav__svg" width="18" height="18" viewBox="-0.8 -0.8 17.6 17.6">
@@ -39,30 +45,20 @@
             </li>
           </ul>
         </div>
-        <div class="header-nav__wrapper header-nav__wrapper--main">
-          <ul class="header-nav__list">
-            <li class="header-nav__item header-nav__item--tablet">
-              <a class="header-nav__link " href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="header-nav__item header-nav__item--tablet">
-              <a class="header-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-nav__wrapper header-nav__wrapper--desktop">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <p class="header-nav__new">Новые поступления</p>
-            </li>
-            <li class="header-nav__item">
-              <p class="header-nav__sale">Распродажа</p>
-            </li>
-            <li class="header-nav__item">
-              <p class="header-nav__delivery">Бесплатная доставка по России</p>
-            </li>
-          </ul>
-        </div>
       </nav>
+      <div class="header-nav__wrapper header-nav__wrapper--extra">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <p class="header-nav__p header-nav__p--new">Новые поступления</p>
+          </li>
+          <li class="header-nav__item">
+            <p class=" header-nav__p header-nav__p--sale">Распродажа</p>
+          </li>
+          <li class="header-nav__item header-nav__item--delivery">
+            <p class="header-nav__p header-nav__p--delivery">Бесплатная доставка по России</p>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main container">
       <h1 class="main__header">Милые штуки ручной работы для дома</h1>
@@ -81,7 +77,7 @@
           </li>
         </ul>
       </section>
-      <article class="top-product inner-container">
+      <article class="top-product">
         <div class="top-product__title-wrapper">
           <h3 class="top-product__title">Вязаные корзинки</h3>
           <b class="top-product__top-week">Товар недели</b>
@@ -109,7 +105,7 @@
         <img class="top-product__image top-product__image--tablet" src="img/triple-set-tablet@1x.jpg" alt="Вязанные корзинки ручной работы" width="333" height="403">
         <img class="top-product__image top-product__image--desktop" src="img/triple-set-desktop@1x.jpg" alt="Вязанные корзинки ручной работы" width="525" height="636">
       </article>
-      <section class="feature inner-container">
+      <section class="feature">
         <h2 class="feature__title">Коротко о нас:</h2>
         <div class="feature__wrapper">
           <ul class="feature__list">
@@ -136,7 +132,7 @@
           </ul>
         </div>
       </section>
-      <section class="reviews inner-container">
+      <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <a class="button reviews__button" href="#">Написать</a>
@@ -155,7 +151,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts inner-container">
+      <section class="contacts">
         <div class="contacts__wrapper">
           <h3 class="contacts__title">Контакты</h3>
           <div class="contacts__table-wrapper">
@@ -164,16 +160,16 @@
               <p class="contacts__value contacts__value--link"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
             </div>
             <div class="contacts__information contacts__information--address">
-                <p class="contacts__label">адрес:</p>
-                <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+              <p class="contacts__label">адрес:</p>
+              <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
             </div>
           </div>
         </div>
         <div class="contacts__map-wrapper">
           <a class="contacts__link-map" href="">
-            <img class="contacts__image-map--mobile" src="img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
-            <img class="contacts__image-map--tablet" src="img/map-tablet@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="768" height="457">
-            <img class="contacts__image-map--desktop" src="img/map-desktop@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="525" height="457">
+            <img class="contacts__image-map contacts__image-map--mobile" src="img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
+            <img class="contacts__image-map contacts__image-map--tablet" src="img/map-tablet@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="768" height="457">
+            <img class="contacts__image-map contacts__image-map--desktop" src="img/map-desktop@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="525" height="457">
           </a>
         </div>
         <a class="button contacts__button" href="#">Напишите нам</a>
@@ -208,7 +204,7 @@
       </div>
     </footer>
     <section class="popap-basket container">
-      <div class="popap-basket__wrapper inner-container">
+      <div class="popap-basket__wrapper">
         <p class="popap-basket__title">Добавить в корзину</p>
         <p class="popap-basket__text">Выберите размер:</p>
         <div class="popap-basket__size-block">

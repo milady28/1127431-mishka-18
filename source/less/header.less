@@ -1,6 +1,5 @@
-.header__wrapper {
-  display: flex;
-  flex-direction: column;
+.header {
+  position: relative;
 }
 
 .header__logo--link {
@@ -16,10 +15,6 @@
 }
 
 .header__logo-image--desktop {
-  display: none;
-}
-
-.header__toggle {
   display: none;
 }
 
@@ -69,6 +64,8 @@
   }
 
   .header__logo-image--desktop {
+    position: absolute;
+
     display: block;
   }
 }
