@@ -1,6 +1,7 @@
 .product {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
 
   border: 1px solid #ededed;
@@ -12,8 +13,6 @@
 }
 
 .product__title {
-  width: 200px;
-
   font-size: 17px;
   line-height: 24px;
 }
@@ -49,10 +48,13 @@
 @media (min-width: @tablet-width) {
   .product {
     flex-direction: row;
+    align-items: stretch;
+    width: auto;
   }
 
   .product__card-wrapper {
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .product__title {

@@ -10,7 +10,7 @@
 }
 
 .popap-basket__title {
-  // width: 150px;
+  width: 150px;
 
   font-size: 25px;
   line-height: 30px;
@@ -27,17 +27,13 @@
 .popap-basket__list {
   display: flex;
   justify-content: space-between;
+  width: 260px;
   padding-left: 0;
 
   list-style: none;
 }
 
-.popap-basket__size-block {
-  width: 100%;
-}
-
 .popap-basket__size-button {
-  width: 100%;
   padding: 20px 30px;
 
   font-size: 17px;
@@ -51,7 +47,7 @@
 }
 
 .popap-basket__button {
-  width: 100%;
+  width: 260px;
   margin-top: 31px;
   margin-bottom: 46px;
 
@@ -66,6 +62,7 @@
 @media (min-width: @tablet-width) {
   .popap-basket {
     width: 566px;
+    margin: 0 auto;
   }
 
   .popap-basket__wrapper {
@@ -94,9 +91,13 @@
   }
 
   .popap-basket__size-button {
-    padding: 20px 52px;
+    padding: 20px 50px;
 
     font-size: 17px;
     line-height: 16px;
+  }
+
+  .popap-basket__button {
+    width: 350px;
   }
 }
