@@ -22,14 +22,16 @@ img {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1154px;
-  width: 100%;
 }
 
-@media (min-width: @desktop-width) {
-  padding: 0 50px;
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 50px;
+  }
 }
 
 .visually-hidden {

@@ -1,14 +1,13 @@
 .header-nav__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   padding-left: 0;
 }
 
 .header-nav__item {
   padding-top: 32px;
   padding-bottom: 30px;
-
 
   text-align: center;
   list-style: none;
@@ -49,7 +48,7 @@
   .header-nav__list--main {
     position: absolute;
     top: 133px;
-    left: 10%;
+    left: 50px;
 
     order: 2;
   }
@@ -104,7 +103,7 @@
   }
 
   .header-nav__link--catalog {
-    padding-right: 36px;
+    padding-right: 70px;
   }
 }
 
@@ -128,13 +127,17 @@
 
   .header-nav__list--main {
     position: static;
+    margin: 0;
     margin-top: 34px;
+    margin-left: 50px;
 
     order: 0;
   }
 
   .header-nav__list--tools {
-    margin-left: 0;
+    margin: 0;
+    margin-right: 50px;
+    margin-left: auto;
   }
 
   .header-nav__link--search {
@@ -149,26 +152,30 @@
     position: absolute;
 
     display: flex;
-    align-items: center;
+    // align-items: center;
+    margin: 0;
     margin-top: 24px;
+    margin-left: 50px;
   }
 
   .header-nav__link--new {
     display: block;
+    padding-right: 60px;
+
+    font-size: 15px;
   }
 
   .header-nav__link--sale {
     display: block;
+
+    font-size: 15px;
   }
 
   .header-nav__item--delivery {
-    margin-left: auto;
+    display: block;
   }
 
   .header-nav__delivery {
     position: static;
-
-    font-size: 15px;
-    line-height: 24px;
   }
 }
