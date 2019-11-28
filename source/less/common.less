@@ -1,14 +1,37 @@
 body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
 
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1154px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 50px;
+  }
 }
 
 .visually-hidden {
@@ -27,9 +50,12 @@ a {
 }
 
 .button {
+  padding: 20px 0;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  text-align: center;
   color: #444444;
   text-transform: uppercase;
 
@@ -38,3 +64,20 @@ a {
 
   cursor: pointer;
 }
+
+.button-catalog {
+  padding: 20px 0;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #444444;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+
+  cursor: pointer;
+}
+
