@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <a class="header__logo-link">
         <img class="header__logo-image header__logo-image--mobile" src="img/logo-mobile.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="86" height="35">
         <img class="header__logo-image header__logo-image--tablet" src="img/logo-tablet.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="113" height="46">
@@ -63,7 +63,6 @@
     <main class="catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
       <section class="catalog__wrapper container">
-        <h3 class="visually-hidden">Блок с карточками товаров </h3>
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="product">
@@ -122,15 +121,9 @@
       <section class="video container">
         <div class="video__wrapper">
           <h3 class="video__title">Процесс производства</h3>
-          <video class="video__production video__production--mobile" width="260" height="150" controls="controls" poster="img/video-mobile@1x.jpg">
-            <source src="#" type="video/mp4">
-          </video>
-          <video class="video__production video__production--tablet" width="668" height="455" controls="controls" poster="img/video-tablet@1x.jpg">
-            <source src="#" type="video/mp4">
-          </video>
-          <video class="video__production video__production--desktop" width="682" height="455" controls="controls" poster="img/video-desktop@1x.jpg">
-            <source src="#" type="video/mp4">
-          </video>
+          <img src="img/video-mobile@1x.jpg" class="video__production video__production--mobile" alt="Видео с процессом производства наших изделий" width="260" height="150">
+          <img src="img/video-tablet@1x.jpg" class="video__production video__production--tablet" alt="Видео с процессом производства наших изделий" width="668" height="455">
+          <img src="img/video-desktop@1x.jpg" class="video__production video__production--desktop" alt="Видео с процессом производства наших изделий" width="682" height="455">
           <div class="video__text-wrapper">
             <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="button-catalog video__button" href="#">Сделать заказ</a>

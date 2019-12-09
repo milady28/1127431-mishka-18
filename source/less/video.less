@@ -1,6 +1,6 @@
 .video {
   width: auto;
-  margin: 0 auto;
+  max-width: 260px;
   margin-bottom: 30px;
 }
 
@@ -68,6 +68,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .video {
+    max-width: 668px;
+  }
+
   .video__description {
     font-size: 15px;
     line-height: 30px;
@@ -96,6 +100,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .video {
+    max-width: 1050px;
+  }
+
   .video__wrapper {
     position: relative;
 
@@ -106,7 +114,15 @@
   .video__title {
     position: absolute;
     top: 0;
-    right: 124px;
+    right: 140px;
+
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+  }
+
+  .product__description {
+    margin-top: 50px;
   }
 
   .video__production--mobile {

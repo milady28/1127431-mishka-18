@@ -1,11 +1,19 @@
-.order-form__block {
+.order-form__wrapper {
+  margin: 0;
+  margin-top: 30px;
   padding: 0;
 
   border: none;
   border-top: 1px solid #63d1bb;
 }
 
+.order-form__block {
+
+}
+
 .order-form__title {
+  margin-bottom: 20px;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -19,6 +27,10 @@
   list-style: none;
 }
 
+.order-form__item {
+  margin-bottom: 25px;
+}
+
 .order-form__input {
   font-size: 17px;
   line-height: 18px;
@@ -28,10 +40,17 @@
   border-bottom: 2px solid #000000;
 }
 
+.order-form__input--user {
+  width: 100%;
+}
+
 .order-form__comment {
+  padding: 0;
+
   font-size: 17px;
   line-height: 18px;
 
+  border: 0;
   border: 2px solid #000000;
 }
 
@@ -44,4 +63,34 @@
 .order-form__footnote {
   font-size: 14px;
   line-height: 16px;
+}
+
+.order-form__button {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 55px;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form {}
+
+  .order-form__block {
+    display: flex;
+    // width: auto;
+
+    border: none;
+  }
+
+  .order-form__title {
+    display: flex;
+  }
+
+  .order-form__item {
+    display: flex;
+  }
+
+  .order-form__list {
+    display: flex;
+    flex-direction: column;
+  }
 }
