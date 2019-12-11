@@ -68,8 +68,8 @@
           <h2 class="visually-hidden">Форма для заказа</h2>
           <form class="order-form__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="container">
-              <fieldset class="order-form__block">
-                <legend class="order-form__title">Тип</legend>
+              <div class="order-form__block">
+                <p class="order-form__title">Тип</p>
                 <ul class="order-form__list">
                   <li class="order-form__item">
                     <input class="order-form__input" type="radio" name="type" value="accessory" id="accessory" checked>
@@ -84,11 +84,9 @@
                     </label>
                   </li>
                 </ul>
-              </fieldset>
-            </div>
-            <div class="container">
-              <fieldset class="order-form__block order-form__block--color">
-                <legend class="order-form__title">Цвет</legend>
+              </div>
+              <div class="order-form__block order-form__block--color">
+                <p class="order-form__title">Цвет</p>
                 <ul class="order-form__list order-form__list--color">
                   <li class="order-form__item">
                     <input class="order-form__input" type="checkbox" name="white-color" id="white-color">
@@ -127,60 +125,56 @@
                     </label>
                   </li>
                 </ul>
-              </fieldset>
-            </div>
-            <div class="container">
-              <fieldset class="order-form__block">
-                <legend class="order-form__title">ФИО</legend>
-                <ul class="order-form__list">
+              </div>
+              <div class="order-form__block">
+                <p class="order-form__title">ФИО</p>
+                <ul class="order-form__list order-form__list--full-name">
                   <li class="order-form__item">
-                    <label class="order-form__label" for="name-user">
+                    <div class="order-form__user-block">
+                      <label class="order-form__label" for="name-user">
                       Имя:
-                    </label>
-                    <input class="order-form__input order-form__input--user order-form__input--full-name" type="text" name="name-user" placeholder="Введите ваше имя*" id="name-user" required>
+                      </label>
+                      <input class="order-form__input order-form__input--user order-form__input--full-name" type="text" name="name-user" placeholder="Введите ваше имя*" id="name-user" required>
+                    </div>
                   </li>
                   <li class="order-form__item">
-                    <label class="order-form__label" for="surname-user">
+                    <div class="order-form__user-block">
+                      <label class="order-form__label" for="surname-user">
                       Фамилия:
-                    </label>
-                    <input class="order-form__input order-form__input--user order-form__input--full-name" type="text" name="surname-user" placeholder="Укажите фамилию*" id="surname-user" required>
+                      </label>
+                      <input class="order-form__input order-form__input--user order-form__input--full-name" type="text" name="surname-user" placeholder="Укажите фамилию*" id="surname-user" required>
+                    </div>
                   </li>
                   <li class="order-form__item">
-                    <label class="order-form__label" for="patronymic-user">
+                    <div class="order-form__user-block">
+                      <label class="order-form__label" for="patronymic-user">
                       Отчество:
-                    </label>
-                    <input class="order-form__input order-form__input--user order-form__input--full-name" type="text" name="patronymic-user" placeholder="Отчество, если желаете" id="patronymic-user">
+                      </label>
+                      <input class="order-form__input order-form__input--user order-form__input--full-name" type="text" name="patronymic-user" placeholder="Отчество, если желаете" id="patronymic-user">
+                    </div>
                   </li>
                 </ul>
-              </fieldset>
-            </div>
-            <div class="container">
-              <fieldset class="order-form__block">
-                <legend class="order-form__title">Тeл</legend>
+              </div>
+              <div class="order-form__block">
+                <p class="order-form__title">Тeл</p>
                 <div class="order-form__user-block">
                   <input class="order-form__input order-form__input--user order-form__input--phone" type="tel" name="phone-user" placeholder="+7 XXX XXX XX XX*" id="phone-user" required>
                   <label class="order-form__label" for="phone-user"></label>
                 </div>
-              </fieldset>
-            </div>
-            <div class="container">
-              <fieldset class="order-form__block">
-                <legend class="order-form__title">E-mail</legend>
+              </div>
+              <div class="order-form__block">
+                <p class="order-form__title">E&#8209mail</p>
                 <div class="order-form__user-block">
                   <input class="order-form__input order-form__input--user order-form__input--email" type="email" name="email-user" placeholder="Ваш Email*" id="email-user" required>
                   <label class="order-form__label" for="email-user"></label>
                 </div>
-              </fieldset>
-            </div>
-            <div class="container">
-              <fieldset class="order-form__block">
-                <legend class="order-form__title">Доп</legend>
+              </div>
+              <div class="order-form__block">
+                <p class="order-form__title">Доп</p>
                 <div class="order-form__user-block">
                   <textarea class="order-form__input order-form__input--user order-form__comment" name="extra-comment" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
                 </div>
-              </fieldset>
-            </div>
-            <div class="container">
+              </div>
               <div class="order-form__footer">
                 <small class="order-form__footnote">
                 <sup>*</sup>Поля обязательные для заполнения
