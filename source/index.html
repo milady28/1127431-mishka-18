@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <a class="header__logo-link">
         <img class="header__logo-image header__logo-image--mobile" src="img/logo-mobile.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="86" height="35">
         <img class="header__logo-image header__logo-image--tablet" src="img/logo-tablet.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="113" height="46">
         <img class="header__logo-image header__logo-image--desktop" src="img/logo-desktop.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="149" height="72">
       </a>
-      <nav class="header-nav">
+      <nav class="header-nav header-nav--opened header-nav--nojs">
         <div class="header-nav__wrapper">
-          <button class="header__toggle" type="button" aria-label="Открыть меню">X</button>
+          <button class="header-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="header-nav__list header-nav__list--main">
             <li class="header-nav__item">
               <a class="header-nav__link header-nav__link--catalog" href="catalog.html">Каталог товаров</a>
@@ -233,5 +233,21 @@
         <button class="button popap-basket__button" type="button">Добавить</button>
       </div>
     </section>
+    <script>
+      var navHeader = document.querySelector('.header-nav');
+      var navToggle = document.querySelector('.header-nav__toggle');
+
+      navHeader.classList.remove('header-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navHeader.classList.contains('header-nav--closed')) {
+          navHeader.classList.remove('header-nav--closed');
+          navHeader.classList.add('header-nav--opened');
+        } else {
+          navHeader.classList.add('header-nav--closed');
+          navHeader.classList.remove('header-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
