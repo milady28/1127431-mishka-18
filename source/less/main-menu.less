@@ -11,7 +11,7 @@
 
 .main-menu__link {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 30px 0;
 
@@ -19,6 +19,23 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+
+  &:hover {
+    padding-top: 35px;
+  }
+
+  &:active {
+    .main-menu__text,
+    .main-menu__link::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-menu__text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-menu__svg {
@@ -29,7 +46,7 @@
   background-color: #63d1bb;
 }
 
-.main-menu__link--interior::after {
+.main-menu__text--interior::after {
   content: "";
 
   width: 40px;
@@ -43,7 +60,7 @@
   background-color: #56c3b2;
 }
 
-.main-menu__link--toys::after {
+.main-menu__text--toys::after {
   content: "";
 
   width: 60px;
