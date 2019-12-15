@@ -1,7 +1,5 @@
 .header-nav {
   flex-grow: 1;
-
-  min-height: 81px;
 }
 
 .header-nav__list {
@@ -13,9 +11,9 @@
 
 .header-nav__item {
   display: flex;
-  justify-content: center;
-  margin-top: 1px;
+  justify-content: flex-start;
   padding-top: 32px;
+  padding-left: 23.75%;
   padding-bottom: 30px;
 
   text-align: left;
@@ -63,13 +61,14 @@
 
 .header-nav__toggle {
   position: absolute;
-  top: 22px;
-  right: 30px;
+  top: 24px;
+  right: 26px;
+  left: auto;
   z-index: 2;
 
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 
   background-color: #ffffff;
 
@@ -77,12 +76,25 @@
   border: none;
 }
 
+.header-nav__item--search,
+.header-nav__item--basket {
+  padding-left: 10%;
+}
+
+.header-nav__svg--search {
+  margin-right: 20px;
+}
+
+.header-nav__svg--basket {
+  margin-right: 16px;
+}
+
 .header-nav--closed .header-nav__toggle::before {
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 17px;
+  top: 8px;
+  left: 5px;
 
   width: 20px;
   height: 2px;
@@ -92,16 +104,17 @@
 }
 
 .header-nav--opened .header-nav__toggle {
-  top: 22px;
+  top: 24px;
   right: 30px;
+  left: auto;
 
   &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top: 24px;
-    left: 18px;
+    top: 15px;
+    left: 5px;
 
     width: 20px;
     height: 2px;
