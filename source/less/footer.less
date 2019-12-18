@@ -44,6 +44,7 @@
 
 .footer__copyright-link {
   vertical-align: middle;
+  width: 40px;
 }
 
 .footer__logo {
@@ -58,26 +59,37 @@
   .footer {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    padding: 51px 0;
+    align-items: flex-start;
+    padding: 0 50px;
+    padding-top: 50px;
+    padding-bottom: 42px;
   }
 
   .footer__logo {
     display: block;
+    margin-top: 2px;
   }
 
   .footer__social-list {
     padding: 0;
+    margin-top: 10px;
+    margin-left: 72px;
 
     border-bottom: none;
   }
 
   .footer__copyright {
-    padding: 0;
+    display: flex;
   }
 
   .footer__copyright-text {
     font-size: 19px;
     line-height: 18px;
+  }
+
+  .footer__copyright-link {
+    display: block;
+    margin-top: -10px;
+
   }
 }
