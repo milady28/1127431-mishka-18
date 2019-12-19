@@ -192,7 +192,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .top-product {
+    position: relative;
+
+    margin-top: 134px;
+  }
+
   .top-product__title {
+    margin-top: 0;
     margin-right: 100px;
     font-size: 53px;
     line-height: 57px;
@@ -205,22 +212,24 @@
   .top-product__top-week {
     order: -1;
     width: 70px;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-left: 47px;
-    margin-right: 58px;
+    margin-right: 54px;
   }
 
   .top-product__text-wrapper {
-    margin-top: 52px;
+    margin-top: 46px;
     margin-left: 175px;
   }
 
   .top-product__description {
     margin: 0;
-    margin-bottom: 66px;
+    margin-right: 58px;
+    margin-bottom: 30px;
   }
 
   .top-product__feature {
+    margin-right: 58px;
     margin-bottom: 111px;
   }
 
@@ -233,10 +242,12 @@
   }
 
   .top-product__image--desktop {
+    position: absolute;
+    top: -108px;
+    right: 50px;
     z-index: -1;
 
     display: flex;
-    margin-top: -100px;
   }
 
   .top-product__footer {
