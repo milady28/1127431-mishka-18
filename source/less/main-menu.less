@@ -20,7 +20,7 @@
   color: #ffffff;
 
   &:hover {
-    padding-top: 35px;
+    transform: scaleY(1.049);
   }
 
   &:active {
@@ -34,6 +34,8 @@
 .main-menu__link--interior {
   padding-top: 18px;
   padding-bottom: 22px;
+
+  background-color: #63d1bb;
 }
 
 .main-menu__link--toys {
@@ -43,16 +45,14 @@
 
 .main-menu__text {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 0 30px;
 }
 
 .main-menu__svg {
   fill: #149080;
-}
-
-.main-menu__link--interior {
-  background-color: #63d1bb;
 }
 
 .main-menu__text--interior::after {
@@ -91,6 +91,8 @@
   }
 
   .main-menu__text {
+    padding: 0 36px;
+
     font-size: 20px;
     line-height: 30px;
   }

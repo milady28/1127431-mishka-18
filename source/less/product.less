@@ -12,6 +12,14 @@
   display: flex;
   flex-direction: column;
   padding: 0 28px;
+
+  &:hover {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__title {
@@ -21,6 +29,14 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__description {
@@ -132,6 +148,25 @@
   .product {
     flex-direction: column;
     max-width: 316px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product__title {
+    margin-top: 26px;
+  }
+
+  .product__description {
+    margin-top: 0;
+    padding-bottom: 38px;
+  }
+
+  .product__card-wrapper--big-name .product__description {
+    padding-bottom: 14px;
+  }
+
+  .product__basket {
+    margin-right: 12px;
   }
 
   .product__image--mobile {

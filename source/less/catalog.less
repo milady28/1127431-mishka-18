@@ -44,12 +44,27 @@
 }
 
 @media (min-width: @desktop-width) {
+  .catalog__wrapper {
+    width: 100%;
+    margin-top: 148px;
+  }
+
   .catalog__list {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    margin-bottom: 54px;
   }
 
-  .catalog__item {
-    width: calc(100% / 3);
+  // .catalog__item {
+    // width: calc(100% / 3);
+  // }
+
+  .catalog__title {
+    padding-top: 92px;
+    padding-bottom: 86px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }
