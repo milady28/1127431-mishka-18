@@ -1,11 +1,10 @@
 .feature {
-  width: auto;
-  margin-top: 76px;
+  width: 100%;
+  margin-top: 68px;
 }
 
 .feature__title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
 
   font-size: 25px;
   line-height: 30px;
@@ -17,6 +16,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
+  margin-top: 32px;
   padding-left: 0;
 
   list-style: none;
@@ -25,7 +25,7 @@
 .feature__item {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-bottom: 32px;
 
   font-size: 17px;
   line-height: 20px;
@@ -37,6 +37,8 @@
 
   width: 32px;
   height: 37px;
+  margin-bottom: 18px;
+  margin-left: 8px;
 
   background-image: url("../img/icon-feature-flower.svg");
   background-repeat: no-repeat;
@@ -47,6 +49,7 @@
 
   width: 47px;
   height: 27px;
+  margin-bottom: 24px;
 
   background-image: url("../img/icon-feature-money.svg");
   background-repeat: no-repeat;
@@ -57,6 +60,8 @@
 
   width: 34px;
   height: 27px;
+  margin-bottom: 24px;
+  margin-left: 8px;
 
   background-image: url("../img/icon-feature-heart.svg");
   background-repeat: no-repeat;
@@ -67,6 +72,7 @@
 
   width: 35px;
   height: 34px;
+  margin-bottom: 18px;
 
   background-image: url("../img/icon-feature-ball.svg");
   background-repeat: no-repeat;
@@ -77,6 +83,7 @@
 
   width: 55px;
   height: 23px;
+  margin-bottom: 26px;
 
   background-image: url("../img/icon-feature-rocket.svg");
   background-repeat: no-repeat;
@@ -87,6 +94,7 @@
 
   width: 33px;
   height: 32px;
+  margin-bottom: 20px;
 
   background-image: url("../img/icon-feature-gift.svg");
   background-repeat: no-repeat;
@@ -94,8 +102,9 @@
 
 @media (min-width: @tablet-width) {
   .feature {
-    margin-top: 128px;
-    margin-bottom: 82px;
+    width: 100%;
+    margin-top: 116px;
+    margin-bottom: 26px;
   }
 
   .feature__title {
@@ -105,15 +114,33 @@
   }
 
   .feature__list {
-    max-height: 600px;
+    flex-grow: 1;
+    max-height: 500px;
+    margin-top: 50px;
   }
 
   .feature__item {
-    width: 295px;
-    margin-top: 112px;
+    width: calc(100% / 2);
+    margin-bottom: 56px;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .feature__item--support {
+    margin-top: 6px;
+  }
+
+  .feature__item--support::before {
+    margin-left: -6px;
+  }
+
+  .feature__item--likes {
+    margin-top: 8px;
+  }
+
+  .feature__item--gift-wrap {
+    margin-top: 4px;
   }
 
   .feature__wrapper {
@@ -123,14 +150,15 @@
 
 @media (min-width: @desktop-width) {
   .feature {
-    margin-top: 166px;
-    margin-bottom: 89px;
-    margin-left: 225px;
+    margin-top: 154px;
+    margin-bottom: 32px;
+    padding-right: 220px;
+    padding-left: 224px;
   }
 
   .feature__title {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 53px;
+    line-height: 57px;
     font-weight: 700;
   }
 

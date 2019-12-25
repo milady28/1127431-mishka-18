@@ -1,7 +1,6 @@
 .product {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 260px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -13,19 +12,48 @@
   display: flex;
   flex-direction: column;
   padding: 0 28px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__title {
+  margin-top: 26px;
+  margin-bottom: 6px;
+
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__description {
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+
   font-size: 13px;
   line-height: 30px;
 
   border-bottom: 1px solid #ededed;
+}
+
+.product__price-wrapper {
+  margin: 0;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__price {
@@ -35,6 +63,21 @@
 
 .product__button {
   padding: 0;
+
+  border: none;
+}
+
+.product__basket {
+  opacity: 0.2;
+
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__image--mobile {
@@ -52,25 +95,36 @@
 @media (min-width: @tablet-width) {
   .product {
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+
     width: auto;
     max-width: 670px;
+    margin-bottom: 52px;
   }
 
   .product__card-wrapper {
-    justify-content: space-between;
-    max-width: 210px;
-    margin: 0 auto;
-    padding: 0 30px;
+    max-width: 334px;
+    margin: 0;
+    padding: 0 26px;
   }
 
   .product__title {
+    margin-top: 24px;
+
     font-size: 20px;
   }
 
   .product__description {
+    padding-bottom: 174px;
+
     font-size: 15px;
+  }
+
+  .product__card-wrapper--big-name .product__description {
+    padding-bottom: 150px;
+  }
+
+  .product__price-wrapper {
+    width: 268px;
   }
 
   .product__price {
@@ -94,6 +148,25 @@
   .product {
     flex-direction: column;
     max-width: 316px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .product__title {
+    margin-top: 26px;
+  }
+
+  .product__description {
+    margin-top: 0;
+    padding-bottom: 38px;
+  }
+
+  .product__card-wrapper--big-name .product__description {
+    padding-bottom: 14px;
+  }
+
+  .product__basket {
+    margin-right: 12px;
   }
 
   .product__image--mobile {
