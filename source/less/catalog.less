@@ -29,6 +29,12 @@
   list-style: none;
 }
 
+.catalog__zigzag {
+  display: none;
+
+  width: 100%;
+}
+
 @media (min-width: @tablet-width) {
   .catalog__title {
     padding-top: 96px;
@@ -38,15 +44,20 @@
   }
 
   .catalog__wrapper {
-    margin-top: 82px;
+    margin-top: 58px;
     align-items: stretch;
+  }
+
+  .catalog__zigzag {
+    display: block;
+    margin-top: -16px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog__wrapper {
     width: 100%;
-    margin-top: 148px;
+    margin-top: 108px;
   }
 
   .catalog__list {
@@ -58,7 +69,7 @@
 
   .catalog__title {
     padding-top: 92px;
-    padding-bottom: 86px;
+    padding-bottom: 102px;
 
     font-size: 53px;
     line-height: 57px;

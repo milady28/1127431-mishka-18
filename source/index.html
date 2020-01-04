@@ -74,7 +74,7 @@
         <section class="main-menu">
           <h2 class="visually-hidden">Основное меню главной страницы</h2>
           <ul class="main-menu__list">
-            <li class="main-menu__item">
+            <li class="main-menu__item main-menu__item--interior">
               <a class="main-menu__link main-menu__link--interior" href="#">
                 <span class="main-menu__text main-menu__text--interior">Предметы<br> интерьера</span>
               </a>
@@ -85,81 +85,92 @@
               </a>
             </li>
           </ul>
+          <div class="main-menu__zigzag">
+            <svg class="main-menu__svg" width="auto" height="34" viewBox="0 0 1150 34">
+              <path fill="#ffffff" d="M1121.252,0c-14.375,0-14.375,14-28.749,14s-14.374-14-28.748-14s-14.374,14-28.748,14 c-14.375,0-14.375-14-28.75-14c-14.374,0-14.374,14-28.748,14S963.135,0,948.761,0s-14.374,14-28.749,14S905.637,0,891.263,0 s-14.374,14-28.749,14s-14.375-14-28.75-14c-14.371,0-14.371,14-28.743,14c-14.375,0-14.375-14-28.75-14 c-14.372,0-14.372,14-28.744,14c-14.374,0-14.374-14-28.747-14s-14.373,14-28.747,14C675.66,14,675.66,0,661.287,0 c-14.374,0-14.374,14-28.748,14c-14.375,0-14.375-14-28.751-14c-14.374,0-14.374,14-28.748,14S560.666,0,546.292,0 s-14.374,14-28.748,14C503.17,14,503.17,0,488.796,0c-14.375,0-14.375,14-28.75,14C445.67,14,445.67,0,431.293,0 c-14.375,0-14.375,14-28.75,14c-14.375,0-14.375-14-28.751-14c-14.375,0-14.375,14-28.75,14S330.666,0,316.291,0 s-14.375,14-28.751,14c-14.376,0-14.376-14-28.753-14c-14.374,0-14.374,14-28.747,14c-14.375,0-14.375-14-28.75-14 c-14.375,0-14.375,14-28.751,14c-14.377,0-14.377-14-28.754-14c-14.377,0-14.377,14-28.755,14c-14.378,0-14.378-14-28.756-14 S71.896,14,57.518,14C43.139,14,43.139,0,28.759,0S14.38,14,0,14v20h1150V14C1135.626,14,1135.626,0,1121.252,0z"/>
+            </svg>
+          </div>
         </section>
       </div>
-      <article class="top-product container">
-        <div class="top-product__title-wrapper">
-          <h3 class="top-product__title">Вязаные корзинки</h3>
-          <b class="top-product__top-week">Товар недели</b>
-        </div>
-        <div class="top-product__wrapper">
-          <div class="top-product__text-wrapper">
-            <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="top-product__feature">
-              <tr class="top-product__line">
-                <th class="top-product__label">Цвет:</th>
-                <td class="top-product__value">«Тиффани»/серый</td>
-              </tr>
-              <tr class="top-product__line">
-                <th class="top-product__label">Диаметр:</th>
-                <td class="top-product__value">25 см</td>
-              </tr>
-              <tr class="top-product__line">
-                <th class="top-product__label">Высота:</th>
-                <td class="top-product__value">15 см</td>
-              </tr>
-            </table>
+      <article class="top-product">
+        <div class="container">
+          <div class="top-product__title-wrapper">
+            <h3 class="top-product__title">Вязаные корзинки</h3>
+            <b class="top-product__top-week">Товар недели</b>
           </div>
-          <img class="top-product__image top-product__image--mobile" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки ручной работы" width="260" height="315">
-          <img class="top-product__image top-product__image--tablet" src="img/triple-set-tablet@1x.jpg" alt="Вязанные корзинки ручной работы" width="333" height="403">
-          <img class="top-product__image top-product__image--desktop" src="img/triple-set-desktop@1x.jpg" alt="Вязанные корзинки ручной работы" width="525" height="636">
-        </div>
-        <div class="top-product__footer">
-          <b class="top-product__price">Цена: 990 руб.</b>
-          <a class="button top-product__button" href="#">Заказать</a>
+          <div class="top-product__wrapper">
+            <div class="top-product__text-wrapper">
+              <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+              <table class="top-product__feature">
+                <tr class="top-product__line">
+                  <th class="top-product__label">Цвет:</th>
+                  <td class="top-product__value">«Тиффани»/серый</td>
+                </tr>
+                <tr class="top-product__line">
+                  <th class="top-product__label">Диаметр:</th>
+                  <td class="top-product__value">25 см</td>
+                </tr>
+                <tr class="top-product__line">
+                  <th class="top-product__label">Высота:</th>
+                  <td class="top-product__value">15 см</td>
+                </tr>
+              </table>
+            </div>
+            <img class="top-product__image top-product__image--mobile" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки ручной работы" width="260" height="315">
+            <img class="top-product__image top-product__image--tablet" src="img/triple-set-tablet@1x.jpg" alt="Вязанные корзинки ручной работы" width="333" height="403">
+            <img class="top-product__image top-product__image--desktop" src="img/triple-set-desktop@1x.jpg" alt="Вязанные корзинки ручной работы" width="525" height="636">
+          </div>
+          <div class="top-product__footer">
+            <b class="top-product__price">Цена: 990 руб.</b>
+            <a class="button top-product__button" href="#">Заказать</a>
+          </div>
         </div>
       </article>
-      <section class="feature container">
-        <h2 class="feature__title">Коротко о нас:</h2>
-        <div class="feature__wrapper">
-          <ul class="feature__list">
-            <li class="feature__item feature__item--ecology">
-              Экологически<br> чистые материалы
-            </li>
-            <li class="feature__item feature__item--price">
-              Скандинавский стиль<br> по российской цене
-            </li>
-            <li class="feature__item feature__item--likes">
-              Увеличивает лайки<br> на фотографиях
-            </li>
-            <li class="feature__item feature__item--with-love">
-              Связано вручную с<br> любовью и умилением
-            </li>
-            <li class="feature__item feature__item--support">
-              Поддержка отечественного<br> производителя
-            </li>
-            <li class="feature__item feature__item--gift-wrap">
-              Поставляется в<br> подарочной упаковке
-            </li>
-          </ul>
+      <section class="feature">
+        <div class="container">
+          <h2 class="feature__title">Коротко о нас:</h2>
+          <div class="feature__wrapper">
+            <ul class="feature__list">
+              <li class="feature__item feature__item--ecology">
+                Экологически<br> чистые материалы
+              </li>
+              <li class="feature__item feature__item--price">
+                Скандинавский стиль<br> по российской цене
+              </li>
+              <li class="feature__item feature__item--likes">
+                Увеличивает лайки<br> на фотографиях
+              </li>
+              <li class="feature__item feature__item--with-love">
+                Связано вручную с<br> любовью и умилением
+              </li>
+              <li class="feature__item feature__item--support">
+                Поддержка отечественного<br> производителя
+              </li>
+              <li class="feature__item feature__item--gift-wrap">
+                Поставляется в<br> подарочной упаковке
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="reviews container">
-        <div class="reviews__wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
-          <a class="button reviews__button" href="#">Написать</a>
-          <cite class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</cite>
-          <div class="reviews__user-wrapper">
-            <p class="reviews__author-name">Анастасия Красильникова</p>
-            <p class="reviews__author-name reviews__author-name--login">@misssssiskras</p>
-          </div>
-          <div class="reviews__button-wrapper">
-            <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Предыдущий отзыв">
-              <img src="img/icon-left-arrow.svg" alt="Предыдущий отзыв" width="50" height="26">
-            </button>
-            <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Следующий отзыв">
-              <img src="img/icon-right-arrow.svg" alt="Следующий отзыв" width="50" height="26">
-            </button>
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__wrapper">
+            <h2 class="reviews__title">Отзывы</h2>
+            <a class="button reviews__button" href="#">Написать</a>
+            <cite class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</cite>
+            <div class="reviews__user-wrapper">
+              <p class="reviews__author-name">Анастасия Красильникова</p>
+              <p class="reviews__author-name reviews__author-name--login">@misssssiskras</p>
+            </div>
+            <div class="reviews__button-wrapper">
+              <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Предыдущий отзыв">
+                <img src="img/icon-left-arrow.svg" alt="Предыдущий отзыв" width="50" height="26">
+              </button>
+              <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Следующий отзыв">
+                <img src="img/icon-right-arrow.svg" alt="Следующий отзыв" width="50" height="26">
+              </button>
+            </div>
           </div>
         </div>
       </section>
