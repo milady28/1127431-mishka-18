@@ -27,17 +27,17 @@
 
   font-size: 17px;
   line-height: 24px;
-}
 
-.video__title::before {
-  content: "";
+  &::before {
+    content: "";
 
-  width: 32px;
-  height: 32px;
-  padding-right: 56px;
+    width: 32px;
+    height: 32px;
+    padding-right: 56px;
 
-  background-image: url("../img/icon-video.svg");
-  background-repeat: no-repeat;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .video__description {
@@ -116,10 +116,10 @@
     margin-left: 8px;
 
     font-size: 20px;
-  }
 
-  .video__title::before {
-    padding-right: 62px;
+    &::before {
+      padding-right: 62px;
+    }
   }
 
   .video__text-wrapper {
@@ -174,11 +174,11 @@
     align-items: flex-start;
     width: 150px;
     padding-left: 0;
-  }
 
-  .video__title::before {
-    position: absolute;
-    top: -54px;
+    &::before {
+      position: absolute;
+      top: -54px;
+    }
   }
 
   .video__text-wrapper {

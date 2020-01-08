@@ -21,6 +21,7 @@
   align-items: center;
   margin: 0;
   padding-bottom: 22px;
+  padding-left: 0;
 
   list-style: none;
 
@@ -82,7 +83,7 @@
 @media (min-width: @tablet-width) {
   .footer {
     padding: 0 50px;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 42px;
   }
 
@@ -132,8 +133,12 @@
 
 @media (min-width: @desktop-width) {
   .footer__wrapper {
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
+  }
+
+  .footer__copyright {
+    padding-top: 4px;
   }
 
   .footer__social-list {

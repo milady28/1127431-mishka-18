@@ -1,6 +1,6 @@
 .feature {
   width: 100%;
-  margin-top: 68px;
+  margin-top: 28px;
 }
 
 .feature__title {
@@ -30,80 +30,80 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-}
 
-.feature__item--ecology::before {
-  content: "";
+  &--ecology::before {
+    content: "";
 
-  width: 32px;
-  height: 37px;
-  margin-bottom: 18px;
-  margin-left: 8px;
+    width: 32px;
+    height: 37px;
+    margin-bottom: 18px;
+    margin-left: 8px;
 
-  background-image: url("../img/icon-feature-flower.svg");
-  background-repeat: no-repeat;
-}
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+  }
 
-.feature__item--price::before {
-  content: "";
+  &--price::before {
+    content: "";
 
-  width: 47px;
-  height: 27px;
-  margin-bottom: 24px;
+    width: 47px;
+    height: 27px;
+    margin-bottom: 24px;
 
-  background-image: url("../img/icon-feature-money.svg");
-  background-repeat: no-repeat;
-}
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+  }
 
-.feature__item--likes::before {
-  content: "";
+  &--likes::before {
+    content: "";
 
-  width: 34px;
-  height: 27px;
-  margin-bottom: 24px;
-  margin-left: 8px;
+    width: 34px;
+    height: 27px;
+    margin-bottom: 24px;
+    margin-left: 8px;
 
-  background-image: url("../img/icon-feature-heart.svg");
-  background-repeat: no-repeat;
-}
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+  }
 
-.feature__item--with-love::before {
-  content: "";
+  &--with-love::before {
+    content: "";
 
-  width: 35px;
-  height: 34px;
-  margin-bottom: 18px;
+    width: 35px;
+    height: 34px;
+    margin-bottom: 18px;
 
-  background-image: url("../img/icon-feature-ball.svg");
-  background-repeat: no-repeat;
-}
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+  }
 
-.feature__item--support::before {
-  content: "";
+  &--support::before {
+    content: "";
 
-  width: 55px;
-  height: 23px;
-  margin-bottom: 26px;
+    width: 55px;
+    height: 23px;
+    margin-bottom: 26px;
 
-  background-image: url("../img/icon-feature-rocket.svg");
-  background-repeat: no-repeat;
-}
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+  }
 
-.feature__item--gift-wrap::before {
-  content: "";
+  &--gift-wrap::before {
+    content: "";
 
-  width: 33px;
-  height: 32px;
-  margin-bottom: 20px;
+    width: 33px;
+    height: 32px;
+    margin-bottom: 20px;
 
-  background-image: url("../img/icon-feature-gift.svg");
-  background-repeat: no-repeat;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .feature {
     width: 100%;
-    margin-top: 116px;
+    margin-top: 48px;
     margin-bottom: 26px;
   }
 
@@ -115,45 +115,44 @@
 
   .feature__list {
     flex-grow: 1;
+    display: flex;
     max-height: 500px;
     margin-top: 50px;
   }
 
   .feature__item {
-    width: calc(100% / 2);
+    width: 50%;
     margin-bottom: 56px;
 
     font-size: 20px;
     line-height: 22px;
-  }
 
-  .feature__item--support {
-    margin-top: 6px;
-  }
+    &--support {
+      margin-top: 6px;
+    }
 
-  .feature__item--support::before {
-    margin-left: -6px;
-  }
+    &--support::before {
+      margin-left: -6px;
+    }
 
-  .feature__item--likes {
-    margin-top: 8px;
-  }
+    &--likes {
+      margin-top: 8px;
+    }
 
-  .feature__item--gift-wrap {
-    margin-top: 4px;
-  }
-
-  .feature__wrapper {
-    display: flex;
+    &--gift-wrap {
+      margin-top: 4px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .feature {
-    margin-top: 154px;
+    margin-top: 60px;
     margin-bottom: 32px;
-    padding-right: 220px;
-    padding-left: 224px;
+  }
+
+  .feature__wrapper {
+    max-width: 800px;
   }
 
   .feature__title {
@@ -162,7 +161,7 @@
     font-weight: 700;
   }
 
-  .feature__wrapper {
+  .feature__list {
     display: flex;
     align-items: center;
   }

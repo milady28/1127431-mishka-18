@@ -7,10 +7,19 @@
 
 .main-menu__item {
   margin: 0;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
 }
 
 .main-menu__link {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -20,7 +29,8 @@
   color: #ffffff;
 
   &:hover {
-    transform: scaleY(1.049);
+    transform: translateY(-5px);
+    transition: all 0.1s ease-in-out;
   }
 
   &:active {
@@ -29,20 +39,20 @@
       opacity: 0.3;
     }
   }
-}
 
-.main-menu__link--interior {
-  padding-top: 18px;
-  padding-bottom: 22px;
+  &--interior {
+    padding-top: 18px;
+    padding-bottom: 22px;
 
-  background-color: #63d1bb;
-}
+    background-color: #63d1bb;
+  }
 
-.main-menu__link--toys {
-  padding-top: 20px;
-  padding-bottom: 22px;
+  &--toys {
+    padding-top: 20px;
+    padding-bottom: 22px;
 
-  background-color: #56c3b2;
+    background-color: #56c3b2;
+  }
 }
 
 .main-menu__text {
@@ -51,36 +61,37 @@
   align-items: center;
   width: 100%;
   padding: 0 30px;
-}
 
-.main-menu__svg {
-  fill: #149080;
-}
+  &--interior::after {
+    content: "";
 
-.main-menu__text--interior::after {
-  content: "";
+    position: relative;
+    top: 4px;
+    right: 4px;
 
-  width: 40px;
-  height: 62px;
+    width: 40px;
+    height: 62px;
 
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-}
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+  }
 
-.main-menu__text--toys::after {
-  content: "";
+  &--toys::after {
+    content: "";
 
-  width: 60px;
-  height: 60px;
-  padding: 1px 0;
+    width: 60px;
+    height: 60px;
+    padding: 1px 0;
 
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-menu__list {
     display: flex;
+    align-items: flex-start;
     margin: 0 50px;
   }
 
@@ -95,14 +106,16 @@
     line-height: 30px;
   }
 
-  .main-menu__link--interior {
-    padding-top: 28px;
-    padding-bottom: 18px;
-  }
+  .main-menu__link {
+    padding-bottom: 30px;
 
-  .main-menu__link--toys {
-    padding-top: 30px;
-    padding-bottom: 18px;
+    &--interior {
+      padding-top: 28px;
+    }
+
+    &--toys {
+      padding-top: 30px;
+    }
   }
 
   .main__header br {
