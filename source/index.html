@@ -113,9 +113,11 @@
                 </tr>
               </table>
             </div>
-            <img class="top-product__image top-product__image--mobile" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки ручной работы" width="260" height="315">
-            <img class="top-product__image top-product__image--tablet" src="img/triple-set-tablet@1x.jpg" alt="Вязанные корзинки ручной работы" width="333" height="403">
-            <img class="top-product__image top-product__image--desktop" src="img/triple-set-desktop@1x.jpg" alt="Вязанные корзинки ручной работы" width="525" height="636">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+              <source media="(min-width: 772px)" srcset="img/triple-set-tablet@1x.jpg">
+              <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки ручной работы" width="260" height="315">
+            </picture>
           </div>
           <div class="top-product__footer">
             <b class="top-product__price">Цена: 990 руб.</b>
@@ -124,30 +126,28 @@
         </div>
       </article>
       <section class="feature">
-        <div class="container">
+        <div class="container feature__wrapper">
           <h2 class="feature__title">Коротко о нас:</h2>
-          <div class="feature__wrapper">
-            <ul class="feature__list">
-              <li class="feature__item feature__item--ecology">
-                Экологически<br> чистые материалы
-              </li>
-              <li class="feature__item feature__item--price">
-                Скандинавский стиль<br> по российской цене
-              </li>
-              <li class="feature__item feature__item--likes">
-                Увеличивает лайки<br> на фотографиях
-              </li>
-              <li class="feature__item feature__item--with-love">
-                Связано вручную с<br> любовью и умилением
-              </li>
-              <li class="feature__item feature__item--support">
-                Поддержка отечественного<br> производителя
-              </li>
-              <li class="feature__item feature__item--gift-wrap">
-                Поставляется в<br> подарочной упаковке
-              </li>
-            </ul>
-          </div>
+          <ul class="feature__list">
+            <li class="feature__item feature__item--ecology">
+              Экологически<br> чистые материалы
+            </li>
+            <li class="feature__item feature__item--price">
+              Скандинавский стиль<br> по российской цене
+            </li>
+            <li class="feature__item feature__item--likes">
+              Увеличивает лайки<br> на фотографиях
+            </li>
+            <li class="feature__item feature__item--with-love">
+              Связано вручную с<br> любовью и умилением
+            </li>
+            <li class="feature__item feature__item--support">
+              Поддержка отечественного<br> производителя
+            </li>
+            <li class="feature__item feature__item--gift-wrap">
+              Поставляется в<br> подарочной упаковке
+            </li>
+          </ul>
         </div>
       </section>
       <section class="reviews">
