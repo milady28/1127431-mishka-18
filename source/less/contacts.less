@@ -55,7 +55,7 @@
 
 .contacts__button {
   margin: 0 30px;
-  margin-top: 42px;
+  margin-top: 30px;
   padding-top: 14px;
   padding-bottom: 14px;
 }
@@ -66,18 +66,6 @@
   display: flex;
   justify-content: center;
   margin-top: 22px;
-}
-
-.contacts__image-map--mobile {
-  display: block;
-}
-
-.contacts__image-map--tablet {
-  display: none;
-}
-
-.contacts__image-map--desktop {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -130,22 +118,14 @@
     padding-right: 22px;
   }
 
-  .contacts__image-map--mobile {
-    display: none;
-  }
-
-  .contacts__image-map--tablet {
-    display: block;
+  .contacts__image-map {
+    width: 768px;
     margin-top: 18px;
-  }
-
-  .contacts__image-map--desktop {
-    display: none;
   }
 
   .contacts__button {
     margin: 0 auto;
-    margin-top: 54px;
+    margin-top: 46px;
     padding-right: 42px;
     padding-bottom: 14px;
     padding-left: 34px;
@@ -162,7 +142,7 @@
     max-width: 1150px;
     margin: 0 auto;
     margin-top: 140px;
-    margin-bottom: 104px;
+    margin-bottom: 94px;
   }
 
   .contacts__wrapper {
@@ -222,21 +202,14 @@
     margin-left: 18px;
   }
 
-  .contacts__image-map--mobile {
-    display: none;
-  }
-
-  .contacts__image-map--tablet {
-    display: none;
-  }
-
-  .contacts__image-map--desktop {
-    display: block;
+  .contacts__image-map {
+    width: 525px;
+    margin-top: 0;
   }
 
   .contacts__button {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 52px;
 
     margin-left: 174px;

@@ -11,9 +11,11 @@
   <body>
     <header class="header">
       <a href="index.html" class="header__logo-link">
-        <img class="header__logo-image header__logo-image--mobile" src="img/logo-mobile.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="86" height="35">
-        <img class="header__logo-image header__logo-image--tablet" src="img/logo-tablet.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="113" height="46">
-        <img class="header__logo-image header__logo-image--desktop" src="img/logo-desktop.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="149" height="72">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 772px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин игрушек ручной работы «Мишка»" width="86" height="35">
+        </picture>
       </a>
       <nav class="header-nav header-nav--closed header-nav--nojs">
         <div class="header-nav__wrapper">
