@@ -90,7 +90,7 @@
         </section>
       </div>
       <article class="top-product">
-        <div class="container">
+        <div class="container top-product__container">
           <div class="top-product__title-wrapper">
             <h3 class="top-product__title">Вязаные корзинки</h3>
             <b class="top-product__top-week">Товар недели</b>
@@ -114,14 +114,14 @@
               </table>
             </div>
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-              <source media="(min-width: 772px)" srcset="img/triple-set-tablet@1x.jpg">
-              <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки ручной работы" width="260" height="315">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 772px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки ручной работы" width="260" height="315">
             </picture>
           </div>
           <div class="top-product__footer">
             <b class="top-product__price">Цена: 990 руб.</b>
-            <a class="button top-product__button" href="#">Заказать</a>
+            <a class="button button--js top-product__button" href="#">Заказать</a>
           </div>
         </div>
       </article>
@@ -191,9 +191,11 @@
         </div>
         <div class="contacts__map-wrapper">
           <a class="contacts__link-map" href="">
-            <img class="contacts__image-map contacts__image-map--mobile" src="img/map-mobile@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
-            <img class="contacts__image-map contacts__image-map--tablet" src="img/map-tablet@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="768" height="457">
-            <img class="contacts__image-map contacts__image-map--desktop" src="img/map-desktop@1x.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="525" height="457">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 772px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__image-map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
+            </picture>
           </a>
         </div>
         <a class="button contacts__button" href="#">Напишите нам</a>
@@ -248,26 +250,27 @@
         </div>
       </div>
     </footer>
-    <section class="popap-basket container">
-      <div class="popap-basket__wrapper">
-        <p class="popap-basket__title">Добавить в корзину</p>
-        <p class="popap-basket__text">Выберите размер:</p>
-        <div class="popap-basket__size-block">
-          <ul class="popap-basket__list">
-            <li class="popap-basket__item">
-              <button class="popap-basket__size-button" type="button" aria-label="Размер S">S</button>
-            </li>
-            <li class="popap-basket__item">
-              <button class="popap-basket__size-button" type="button" aria-label="Размер M">M</button>
-            </li>
-            <li class="popap-basket__item">
-              <button class="popap-basket__size-button" type="button" aria-label="Размер L">L</button>
-            </li>
-          </ul>
+    <section class="popap-basket">
+      <div class="popup-overlay"></div>
+        <div class="popap-basket__wrapper container">
+          <p class="popap-basket__title">Добавить в корзину</p>
+          <p class="popap-basket__text">Выберите размер:</p>
+          <div class="popap-basket__size-block">
+            <ul class="popap-basket__list">
+              <li class="popap-basket__item">
+                <button class="popap-basket__size-button" type="button" aria-label="Размер S">S</button>
+              </li>
+              <li class="popap-basket__item">
+                <button class="popap-basket__size-button" type="button" aria-label="Размер M">M</button>
+              </li>
+              <li class="popap-basket__item">
+                <button class="popap-basket__size-button" type="button" aria-label="Размер L">L</button>
+              </li>
+            </ul>
+          </div>
+          <button class="button popap-basket__button" type="button">Добавить</button>
         </div>
-        <button class="button popap-basket__button" type="button">Добавить</button>
-      </div>
     </section>
-    <script src="js/popap-basket.js"></script>
+    <script src="js/jsfile.js"></script>
   </body>
 </html>
