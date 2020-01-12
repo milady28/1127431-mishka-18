@@ -13,7 +13,7 @@ var navHeader = document.querySelector('.header-nav');
         }
       });
 
-var buttonBuy = document.querySelectorAll(".button__buy"), index, buttom;
+var buttonBuy = document.querySelectorAll(".button--js, .product__button--js"), index, buttom;
 var popapBasket = document.querySelector(".popap-basket");
 var closeBasket = popapBasket.querySelector(".popup-overlay");
 
