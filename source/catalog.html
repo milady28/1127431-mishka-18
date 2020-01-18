@@ -5,7 +5,6 @@
     <title>HTML Academy: Мишка - Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -81,9 +80,9 @@
             <article class="product">
               <a class="product__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="build/img/photo-hare-desktop@1x.webp 1x, build/img/photo-hare-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 772px)" srcset="build/img/photo-hare-tablet@1x.webp 1x, build/img/photo-hare-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="build/img/photo-hare-mobile@1x.webp 1x, build/img/photo-hare-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                   <source media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                   <img class="product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Игрушка Зайчик-попрыгайчик">
@@ -97,7 +96,7 @@
                 <div class="product__price-wrapper">
                   <b class="product__price">1 200 руб.</b>
                   <a class="product__button product__button--js" aria-label="Положить в корзину">
-                    <svg class="header-nav__svg header-nav__svg--basket" width="21" height="18">
+                    <svg class="product__basket" width="21" height="18">
                       <use xlink:href="#embed-icon-cart"></use>
                     </svg>
                   </a>
@@ -109,9 +108,9 @@
             <article class="product">
               <a class="product__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="build/img/photo-bowl-desktop@1x.webp 1x, build/img/photo-bowl-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 772px)" srcset="build/img/photo-bowl-tablet@1x.webp 1x, build/img/photo-bowl-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="build/img/photo-bowl-mobile@1x.webp 1x, build/img/photo-bowl-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                   <source media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                   <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -125,7 +124,7 @@
                 <div class="product__price-wrapper">
                   <b class="product__price">690 руб.</b>
                   <a class="product__button product__button--js" aria-label="Положить в корзину">
-                    <svg class="header-nav__svg header-nav__svg--basket" width="21" height="18">
+                    <svg class="product__basket" width="21" height="18">
                       <use xlink:href="#embed-icon-cart"></use>
                     </svg>
                   </a>
@@ -137,9 +136,9 @@
             <article class="product">
               <a class="product__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="build/img/photo-toys-desktop@1x.webp 1x, build/img/photo-toys-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 772px)" srcset="build/img/photo-toys-tablet@1x.webp 1x, build/img/photo-toys-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="build/img/photo-toys-mobile@1x.webp 1x, build/img/photo-toys-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                   <img class="product__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
@@ -153,7 +152,7 @@
                 <div class="product__price-wrapper">
                   <b class="product__price">1 500 руб.</b>
                   <a class="product__button product__button--js" aria-label="Положить в корзину">
-                    <svg class="header-nav__svg header-nav__svg--basket" width="21" height="18">
+                    <svg class="product__basket" width="21" height="18">
                       <use xlink:href="#embed-icon-cart"></use>
                     </svg>
                   </a>
@@ -168,9 +167,9 @@
           <h3 class="video__title">Процесс производства</h3>
           <div class="video__img-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="build/img/video-desktop@1x.webp 1x, build/img/video-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 772px)" srcset="build/img/video-tablet@1x.webp 1x, build/img/video-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="build/img/video-mobile@1x.webp 1x, build/img/video-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 772px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 772px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video__production" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео с процессом производства наших изделий">
