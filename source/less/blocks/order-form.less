@@ -47,6 +47,10 @@
   &--extra {
     margin-bottom: 24px;
   }
+
+  &--phone {
+    margin-bottom: 16px;
+  }
 }
 
 .order-form__list {
@@ -82,12 +86,17 @@
 }
 
 .order-form__input {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
 
   background-color: #ffffff;
   border: none;
   border-bottom: 2px solid #000000;
+
+  &--phone {
+    font-size: 19px;
+  }
 }
 
 .order-form__input + .order-form__label {
@@ -222,7 +231,7 @@
 
 .order-form__input--phone[placeholder],
 .order-form__input--email[placeholder] {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .order-form__comment:hover,
@@ -291,7 +300,7 @@
 
     &--full-name {
       padding-top: 50px;
-      padding-bottom: 14px;
+      padding-bottom: 12px;
     }
 
     &--email {
@@ -323,7 +332,7 @@
     &--full-name {
       flex-grow: 1;
       display: block;
-      margin-top: -6px;
+      margin-top: -4px;
       margin-left: 110px;
     }
   }
@@ -347,14 +356,11 @@
     }
 
     &--full-name {
-      padding-top: 8px;
+      padding-top: 0;
     }
   }
 
-  .order-form__input--phone {
-    background-color: #f1f1f1;
-  }
-
+  .order-form__input--phone,
   .order-form__input--email {
     background-color: #f1f1f1;
   }
@@ -365,6 +371,10 @@
     &--full-name {
       padding-right: 24px;
     }
+  }
+
+  .order-form__input {
+    font-size: 19px;
   }
 
   .order-form__input--type + .order-form__label--type::before {
@@ -408,9 +418,9 @@
     padding-bottom: 20px;
 
     &--phone {
-      padding-top: 14px;
+      padding-top: 12px;
       padding-bottom: 0;
-      padding-left: 116px;
+      padding-left: 120px;
     }
 
     &--email {
@@ -426,13 +436,17 @@
   .order-form__input--user[placeholder] {
     padding-left: 16px;
 
-    font-size: 17px;
+    font-size: 19px;
     line-height: 18px;
+  }
+
+  .order-form__input--phone[placeholder] {
+    padding-bottom: 10px;
   }
 
   .order-form__block-bg {
     padding-top: 50px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
 
     background-color: #f1f1f1;
 
@@ -472,6 +486,7 @@
   }
 }
 
+
 @media (min-width: @desktop-width) {
   .order-form {
     margin: 0 auto;
@@ -488,7 +503,7 @@
     }
 
     &--color {
-      padding-bottom: 4px;
+      padding-bottom: 2px;
       padding-left: 110px;
     }
 
@@ -543,10 +558,6 @@
       &:nth-child(2n) {
         left: 0;
       }
-    }
-
-    &--full-name {
-      padding-top: 4px;
     }
   }
 
