@@ -13,7 +13,6 @@
 
 .feature__list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   margin-top: 32px;
@@ -25,7 +24,6 @@
 .feature__item {
   display: flex;
   flex-direction: column;
-  width: 50%;
   margin-bottom: 32px;
 
   font-size: 17px;
@@ -110,7 +108,7 @@
 @media (min-width: @tablet-width) {
   .feature {
     margin-top: 48px;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
   }
 
   .feature__title {
@@ -120,31 +118,47 @@
   }
 
   .feature__list {
-    flex-grow: 1;
-    max-height: 500px;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   .feature__item {
     width: 50%;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
 
     font-size: 20px;
     line-height: 22px;
 
-    &--support {
+    &--ecology {
+      order: 1;
+      margin-top: -4px;
+    }
+
+    &--with-love {
+      order: 2;
+      margin-top: -2px;
+    }
+
+    &--price {
+      order: 3;
       margin-top: 6px;
     }
 
-    &--support::before {
-      margin-left: -6px;
+    &--support {
+      order: 4;
+      margin-top: 6px;
+
+      &::before {
+        margin-left: -6px;
+      }
     }
 
     &--likes {
+      order: 5;
       margin-top: 8px;
     }
 
     &--gift-wrap {
+      order: 6;
       margin-top: 4px;
     }
   }
@@ -153,7 +167,7 @@
 @media (min-width: @desktop-width) {
   .feature {
     margin-top: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   .feature__wrapper {
@@ -164,10 +178,5 @@
     font-size: 53px;
     line-height: 57px;
     font-weight: 700;
-  }
-
-  .feature__list {
-    // display: flex;
-    // align-items: center;
   }
 }
