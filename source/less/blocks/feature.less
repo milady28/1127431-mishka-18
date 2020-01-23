@@ -14,7 +14,6 @@
 .feature__list {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 0;
   margin-top: 32px;
   padding-left: 0;
@@ -34,6 +33,7 @@
   &--ecology::before {
     content: "";
 
+    display: block;
     width: 32px;
     height: 37px;
     margin-bottom: 18px;
@@ -46,6 +46,7 @@
   &--price::before {
     content: "";
 
+    display: block;
     width: 47px;
     height: 27px;
     margin-bottom: 24px;
@@ -57,6 +58,7 @@
   &--likes::before {
     content: "";
 
+    display: block;
     width: 34px;
     height: 27px;
     margin-bottom: 24px;
@@ -69,6 +71,7 @@
   &--with-love::before {
     content: "";
 
+    display: block;
     width: 35px;
     height: 34px;
     margin-bottom: 18px;
@@ -80,6 +83,7 @@
   &--support::before {
     content: "";
 
+    display: block;
     width: 55px;
     height: 23px;
     margin-bottom: 26px;
@@ -91,6 +95,7 @@
   &--gift-wrap::before {
     content: "";
 
+    display: block;
     width: 33px;
     height: 32px;
     margin-bottom: 20px;
@@ -102,9 +107,8 @@
 
 @media (min-width: @tablet-width) {
   .feature {
-    width: 100%;
     margin-top: 48px;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
   }
 
   .feature__title {
@@ -114,32 +118,49 @@
   }
 
   .feature__list {
-    flex-grow: 1;
-    display: flex;
-    max-height: 500px;
-    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 52px;
   }
 
   .feature__item {
     width: 50%;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
 
     font-size: 20px;
     line-height: 22px;
 
-    &--support {
+    &--ecology {
+      order: 1;
+      margin-top: -4px;
+    }
+
+    &--with-love {
+      order: 2;
+      margin-top: -2px;
+    }
+
+    &--price {
+      order: 3;
       margin-top: 6px;
     }
 
-    &--support::before {
-      margin-left: -6px;
+    &--support {
+      order: 4;
+      margin-top: 6px;
+
+      &::before {
+        margin-left: -6px;
+      }
     }
 
     &--likes {
+      order: 5;
       margin-top: 8px;
     }
 
     &--gift-wrap {
+      order: 6;
       margin-top: 4px;
     }
   }
@@ -148,7 +169,7 @@
 @media (min-width: @desktop-width) {
   .feature {
     margin-top: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   .feature__wrapper {
@@ -159,10 +180,5 @@
     font-size: 53px;
     line-height: 57px;
     font-weight: 700;
-  }
-
-  .feature__list {
-    display: flex;
-    align-items: center;
   }
 }
